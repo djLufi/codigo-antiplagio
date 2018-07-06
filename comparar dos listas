@@ -1,0 +1,32 @@
+#codigo antiplagio
+
+def listaUno(x):
+    listaC=[]
+    print("ESCRIBA LOS TEXTOS")
+    for i in range(0,x):
+        a=input(" ")
+        listaC= listaC + [a]
+    return listaC
+x= int(input("CANTIDAD DE LINEAS DEL TEXTO?:"))
+y=listaUno(x)
+print("LISTA A ORIGINAL")
+print(y)
+
+a= int(input("CANTIDAD DE LINEAS DEL TEXTO?:"))
+b= listaUno (a)
+print("LISTA A COMPARAR")
+print(b)
+
+n= len(y)
+m=len(b)
+Lista=[]
+for r in range(0,n):
+    for s in range(0, m):
+        if (y[r] == b[s]):
+            j= b[s]
+            Lista= Lista + [j]
+
+
+
+print("LAS PALABRAS QUE SON IGUALES SON LAS SIGUIENTE")
+print(Lista)
